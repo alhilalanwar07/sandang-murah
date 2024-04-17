@@ -140,81 +140,80 @@
                 </div>
             </div>
         </div>
-</div>
-</section>
-<!-- Shoping Cart Section End -->
+    </section>
+    <!-- Shoping Cart Section End -->
 
-<style>
-    /* decrement & increment */
-    .pro-qty11 .dec.qtybtn {
-        background: #f1f1f1;
-        color: #000;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1;
-        padding: 0 10px;
-        position: relative;
-        z-index: 1;
-        /* pointer */
-        cursor: pointer;
-    }
+    <style>
+        /* decrement & increment */
+        .pro-qty11 .dec.qtybtn {
+            background: #f1f1f1;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+            /* pointer */
+            cursor: pointer;
+        }
 
-    /* BTN HOVER */
-    .pro-qty11 .dec.qtybtn:hover {
-        background: #ff6e40;
-        color: #fff;
-    }
+        /* BTN HOVER */
+        .pro-qty11 .dec.qtybtn:hover {
+            background: #ff6e40;
+            color: #fff;
+        }
 
-    .pro-qty11 .inc.qtybtn {
-        background: #f1f1f1;
-        color: #000;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1;
-        padding: 0 10px;
-        position: relative;
-        z-index: 1;
-        cursor: pointer;
-    }
+        .pro-qty11 .inc.qtybtn {
+            background: #f1f1f1;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
 
-    /* BTN HOVER */
-    .pro-qty11 .inc.qtybtn:hover {
-        background: #ff6e40;
-        color: #fff;
-    }
+        /* BTN HOVER */
+        .pro-qty11 .inc.qtybtn:hover {
+            background: #ff6e40;
+            color: #fff;
+        }
 
-    /* input */
-    .pro-qty11 input {
-        background: #f1f1f1;
-        border: none;
-        color: #000;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1;
-        padding: 0 10px;
-        text-align: center;
-        width: 40px;
-    }
+        /* input */
+        .pro-qty11 input {
+            background: #f1f1f1;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 0 10px;
+            text-align: center;
+            width: 40px;
+        }
 
-    .primary-btn {
-        background: #fc6132;
-        border: none;
-        display: block;
-        /* text color */
-        color: #fff;
-        cursor: pointer;
+        .primary-btn {
+            background: #fc6132;
+            border: none;
+            display: block;
+            /* text color */
+            color: #fff;
+            cursor: pointer;
 
-    }
+        }
 
-    /* btn hover */
-    .primary-btn:hover {
-        background: #fa4007;
-        border: none;
-        display: block;
-        /* text color */
-        color: #fff;
-        cursor: pointer;
-    }
+        /* btn hover */
+        .primary-btn:hover {
+            background: #fa4007;
+            border: none;
+            display: block;
+            /* text color */
+            color: #fff;
+            cursor: pointer;
+        }
 
-</style>
+    </style>
 </div>

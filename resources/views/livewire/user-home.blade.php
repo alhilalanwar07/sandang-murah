@@ -19,7 +19,7 @@
             </a>
         </div>
     </div>
-    
+
     {{-- CARD TENTANG KAMI --}}
     <div class="card mt-3">
         <div class="card-header text-center">
