@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Toko sandang murah adalah toko yang menjual pupuk dan pestisida pertanian">
+    <meta name="keywords" content="toko sandang murah">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        @yield('title') | {{ config('app.name') }}
-    </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ config('app.name') }}</title>
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    @livewireStyles
-    <link rel="stylesheet" href="{{ url('/') }}/assets/css/main/app.css">
-    <link rel="stylesheet" href="{{ url('/') }}/assets/css/pages/auth.css">
     {{-- icon --}}
     <link rel="shortcut icon" href="{{ url('/') }}/assets1/img/sandang_murah_logo.png" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('/') }}/assets1/img/sandang_murah_logo.png" type="image/png">
-    {{-- css di content --}}
-    @yield('css')
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app-dark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/iconly.css">
+    {{-- @yield('css') --}}
+    @livewireStyles
+
 </head>
 
 <body>
     @yield('content')
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/initTheme.js"></script>
+    <!-- Start content here -->
+
+    <!-- End content -->
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/components/dark.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/js/app.js"></script>
+
+    <!-- Need: Apexcharts -->
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/pages/dashboard.js"></script>
     @livewireScripts
 </body>
 </html>
