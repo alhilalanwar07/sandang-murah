@@ -73,10 +73,10 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
+                    <label for="email" class="col-md-12 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
                     <div
                         class="form-group position-relative has-icon-left mb-1"
                     >
-                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
                         <input
                             id="email"
                             type="email"
@@ -97,10 +97,10 @@
                             <i class="bi bi-person"></i>
                         </div>
                     </div>
+                    <label for="password" class="col-md-12 col-form-label text-md-right">{{ __('Password') }}</label>
                     <div
                         class="form-group position-relative has-icon-left mb-1"
                     >
-                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
                         <input
                             id="password"
                             type="password"
