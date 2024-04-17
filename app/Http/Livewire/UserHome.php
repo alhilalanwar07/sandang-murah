@@ -7,8 +7,13 @@ use Livewire\Component;
 
 class UserHome extends Component
 {
-    protected $produks, $latestProduks, $topProduks, $expansiveProduks, $slide5;
-    public $search, $perPage = 8;
+    protected $produks;
+    protected $latestProduks;
+    protected $topProduks;
+    protected $expansiveProduks;
+    protected $slide5;
+    public $search;
+    public $perPage = 8;
     protected $updatesQueryString = ['search' => ['except' => ''], 'perPage' => ['except' => 8]];
 
     public function render()
@@ -16,12 +21,12 @@ class UserHome extends Component
         $this->produks = Produk::where('nama_produk', 'like', '%'.$this->search.'%')
             ->orderBy('created_at', 'asc')
             ->paginate($this->perPage);
-            // latest() untuk urutan terbaru
+        // latest() untuk urutan terbaru
         $this->latestProduks = Produk::latest()->take(3)->get();
         $this->topProduks = Produk::orderBy('stok', 'asc')->take(3)->get();
         $this->expansiveProduks = Produk::orderBy('harga', 'desc')->take(3)->get();
         $this->slide5 = Produk::latest()->take(5)->get();
-        return view('livewire.user-home',[
+        return view('livewire.user-home', [
             'produks' => $this->produks,
             'latestProduks' => $this->latestProduks,
             'topProduks' => $this->topProduks,
