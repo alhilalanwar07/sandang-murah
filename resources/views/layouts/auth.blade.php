@@ -14,7 +14,8 @@
     {{-- icon --}}
     <link rel="shortcut icon" href="{{ url('/') }}/assets1/img/sandang_murah_logo.png" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('/') }}/assets1/img/sandang_murah_logo.png" type="image/png">
-
+    {{-- css di content --}}
+    @yield('css')
 </head>
 
 <body>

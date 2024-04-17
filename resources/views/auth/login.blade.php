@@ -1,9 +1,54 @@
 @extends('layouts.auth')
 @section('title', 'Login')
 @section('content')
-<div id="auth">
-    <div class="row h-50">
-        <div class="col-lg-5 col-12">
+
+{{-- css dari auth --}}
+{{-- @push('css') --}}
+<style>
+    #auth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #auth-left {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #auth-right {
+        background: url('/assets1/img/sandang_murah_logo.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .auth-logo h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+    }
+    .auth-logo span {
+        font-size: 0.8rem;
+        color: #666;
+    }
+    .auth-logo a {
+        text-decoration: none;
+    }
+    */ bg */
+    .bg-primary {
+        background-color: #007bff !important;
+    }
+</style>
+{{-- @endpush --}}
+
+<div id="auth" class="">
+    <div class="row h-80">
+        <div class="">
             <div id="auth-left" class="mb-2">
                 <div class="auth-logo text-center">
                     <a href="/">
@@ -13,6 +58,7 @@
                         </span>
                     </a>
                 </div>
+                <p></p>
                 <h3 class="mb-3">Halaman Login</h3>
                 @if (session('success'))
                 <script>
@@ -28,8 +74,9 @@
                     @csrf
 
                     <div
-                        class="form-group position-relative has-icon-left mb-4"
+                        class="form-group position-relative has-icon-left mb-1"
                     >
+                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
                         <input
                             id="email"
                             type="email"
@@ -51,8 +98,9 @@
                         </div>
                     </div>
                     <div
-                        class="form-group position-relative has-icon-left mb-4"
+                        class="form-group position-relative has-icon-left mb-1"
                     >
+                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
                         <input
                             id="password"
                             type="password"
@@ -90,9 +138,6 @@
                         </p>
                     </p>
             </div>
-        </div>
-        <div class="col-lg-7 d-none d-lg-block">
-            <div  id="auth-right" style="background-image: url('/assets1/img/sandang_murah_logo.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
         </div>
     </div>
 </div>
