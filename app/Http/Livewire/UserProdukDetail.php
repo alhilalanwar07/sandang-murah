@@ -35,6 +35,6 @@ class UserProdukDetail extends Component
             'gambar3' => $this->gambar3,
             'status' => $this->status,
             dd($this->produks),
-        ])->extends('layouts.user')->section('content');
+        ])->layout('layouts.user');
     }
 }

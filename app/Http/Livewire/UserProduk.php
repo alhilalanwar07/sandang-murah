@@ -36,7 +36,7 @@ class UserProduk extends Component
             'produks' => $this->produks,
             'latestProduks' => $this->latestProduks,
             'topProduks' => $this->topProduks,
-        ])->extends('layouts.user')->section('content');
+        ])->layout('layouts.user');
     }
 
     public function addToCart($id)

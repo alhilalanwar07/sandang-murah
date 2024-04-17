@@ -39,7 +39,7 @@ class UserPesanan extends Component
             'detail_pesanans' => $this->detail_pesanans,
             'detail_pesanans1' => $this->detail_pesanans1,
             'notifikasis' => $this->notifikasis,
-        ])->extends('layouts.user')->section('content');
+        ])->layout('layouts.user');
     }
 
     public function detail($id)

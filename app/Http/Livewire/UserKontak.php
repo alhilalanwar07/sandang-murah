@@ -9,6 +9,6 @@ class UserKontak extends Component
 
     public function render()
     {
-        return view('livewire.user-kontak')->extends('layouts.user')->section('content');
+        return view('livewire.user-kontak')->layout('layouts.user');
     }
 }

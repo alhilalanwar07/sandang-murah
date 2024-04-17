@@ -27,6 +27,6 @@ class UserHome extends Component
             'topProduks' => $this->topProduks,
             'expansiveProduks' => $this->expansiveProduks,
             'slide5' => $this->slide5,
-        ])->extends('layouts.user')->section('content');
+        ])->layout('layouts.user');
     }
 }

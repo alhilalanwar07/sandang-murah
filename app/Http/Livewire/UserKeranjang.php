@@ -46,7 +46,7 @@ class UserKeranjang extends Component
 
         return view('livewire.user-keranjang', [
             'keranjangs' => $this->keranjangs,
-        ])->extends('layouts.user')->section('content');
+        ])->layout('layouts.user');
     }
 
     public function destroy($id)
