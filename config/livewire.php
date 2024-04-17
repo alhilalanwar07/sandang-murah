@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url'  =>  env('APP_URL', 'https://sandang-murah.shop'),
+    'asset_url'  => null,
 
     /*
     |--------------------------------------------------------------------------

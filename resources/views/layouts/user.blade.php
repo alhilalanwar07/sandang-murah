@@ -7,7 +7,8 @@
     <meta name="keywords" content="toko sandang murah">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ config('app.name') }}</title>
+    <title>
+        {{ config('app.name') }}</title>
 
     {{-- icon --}}
     <link rel="shortcut icon" href="{{ url('/') }}/assets1/img/sandang_murah_logo.png" type="image/x-icon">
@@ -168,7 +169,6 @@
     <!-- Need: Apexcharts -->
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/apexcharts/apexcharts.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/pages/dashboard.js"></script>
-    @livewireScripts
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const burgerBtn = document.getElementById('burger-btn');
@@ -184,7 +184,7 @@
         });
 
     </script>
-
+    @livewireScripts
 </body>
 
 </html>
