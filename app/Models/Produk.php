@@ -19,4 +19,16 @@ class Produk extends Model
         'gambar3',
         'status'
     ];
+
+    // keranjang
+    public function keranjang()
+    {
+        return $this->hasMany(Keranjang::class);
+    }
+
+    // pesanan
+    public function pesanan()
+    {
+        return $this->hasMany(Pesanan::class);
+    }
 }

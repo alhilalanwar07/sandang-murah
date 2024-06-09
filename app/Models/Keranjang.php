@@ -14,4 +14,14 @@ class Keranjang extends Model
         'produk_id',
         'jumlah',
     ];
+
+    public function produks()
+    {
+        return $this->belongsTo(Produk::class, 'produk_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
